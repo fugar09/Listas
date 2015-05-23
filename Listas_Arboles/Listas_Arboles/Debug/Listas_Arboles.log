@@ -1,18 +1,22 @@
-﻿Compilación iniciada a las 5/22/2015 5:46:27 PM.
-     1>Proyecto "c:\Users\b38603\documents\visual studio 2013\Projects\Listas_Arboles\Listas_Arboles\Listas_Arboles.vcxproj" en el nodo 2 (Build destinos).
+﻿Compilación iniciada a las 5/22/2015 6:57:42 PM.
+     1>Proyecto "C:\Users\b38603\Documents\GitHub\Listas\Listas_Arboles\Listas_Arboles\Listas_Arboles.vcxproj" en el nodo 2 (Build destinos).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Listas_Arboles.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Elemento.cpp
-         Elemento.cpp
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(11): error C2065: 'hIzq' : identificador no declarado
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(12): error C2065: 'hDer' : identificador no declarado
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(16): error C2065: 'hIzq' : identificador no declarado
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(17): error C2065: 'hIzq' : identificador no declarado
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(17): error C2541: 'delete' : no se pueden eliminar objetos que no sean punteros
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(19): error C2065: 'hDer' : identificador no declarado
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(20): error C2065: 'hDer' : identificador no declarado
-     1>c:\users\b38603\documents\visual studio 2013\projects\listas_arboles\listas_arboles\elemento.cpp(20): error C2541: 'delete' : no se pueden eliminar objetos que no sean punteros
-     1>Compilación del proyecto terminada "c:\Users\b38603\documents\visual studio 2013\Projects\Listas_Arboles\Listas_Arboles\Listas_Arboles.vcxproj" (Build destinos) -- ERROR.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Listas_Arboles.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Listas_Arboles.cpp
+         Listas_Arboles.cpp
+     1>c:\users\b38603\documents\github\listas\listas_arboles\listas_arboles\listas_arboles.cpp(17): warning C4244: 'argumento' : conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+     1>cl : Línea de comandos warning D9028: error de recompilación mínimo, revirtiendo a la compilación normal
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\b38603\Documents\GitHub\Listas\Listas_Arboles\Debug\Listas_Arboles.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\b38603\Documents\GitHub\Listas\Listas_Arboles\Debug\Listas_Arboles.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\b38603\Documents\GitHub\Listas\Listas_Arboles\Debug\Listas_Arboles.lib" /MACHINE:X86 Debug\Elemento.obj
+         Debug\ElementoDouble.obj
+         Debug\ElementoInt.obj
+         Debug\ElementoPersona.obj
+         Debug\Lista.obj
+         Debug\Listas_Arboles.obj
+         Debug\Persona.obj
+         Debug\stdafx.obj
+         Listas_Arboles.vcxproj -> C:\Users\b38603\Documents\GitHub\Listas\Listas_Arboles\Debug\Listas_Arboles.exe
+     1>Compilación del proyecto terminada "C:\Users\b38603\Documents\GitHub\Listas\Listas_Arboles\Listas_Arboles\Listas_Arboles.vcxproj" (Build destinos).
 
-ERROR al compilar.
+Compilación correcta.
 
-Tiempo transcurrido 00:00:00.13
+Tiempo transcurrido 00:00:00.43

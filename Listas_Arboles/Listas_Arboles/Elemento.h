@@ -6,11 +6,11 @@
  */
 
 #pragma once
-
 using namespace std;
 
-class Elemento {
 
+class Elemento {
+	friend class Lista;
 	friend ostream & operator<<(ostream &, const Elemento &);
 
 protected:
