@@ -13,10 +13,6 @@ Elemento::Elemento() {
 }
 
 Elemento::~Elemento() {
-	if (siguiente != NULL) {
-		delete siguiente;
-	}
-
 }
 
 ostream & operator<<(ostream & out, const Elemento & e) {

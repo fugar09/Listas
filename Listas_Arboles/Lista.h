@@ -17,7 +17,13 @@ public:
 	virtual ~Lista();
 	bool listaVacia();
 	void insertarFinal(Elemento*);
+	void insertarInicio(Elemento*);
+	void insertar(Elemento*, int);
 	void imprimir(ostream&);
+
+	void removerFinal();
+	void removerInicio();
+	void remover(int);
 };
 
 ostream & operator<<(ostream &, Lista &);

@@ -28,6 +28,51 @@ void Lista::insertarFinal(Elemento* elemento){
 	contador++;
 }
 
+void Lista::insertarInicio(Elemento* elemento){
+	if (listaVacia()){
+		this->inicial = elemento;
+		this->final = elemento;
+	}
+	else{
+		elemento->siguiente = this->inicial;
+		this->inicial = elemento;
+
+	}
+}
+
+void Lista::insertar(Elemento* elemento, int posicion){
+	if (posicion == 0){
+		insertarInicio(elemento);
+	}else if (posicion == contador){
+		insertarFinal(elemento);
+	}else{
+		Elemento* temp1 = this->inicial;
+		while (--posicion){
+			temp1 = temp1->siguiente;
+		}
+		Elemento* temp2 = temp1->siguiente;
+		temp1->siguiente = elemento;
+		elemento->siguiente = temp2;
+	}
+}
+
+void Lista::removerFinal(){
+	Elemento* prev = this->inicial;
+	Elemento* temp = this->inicial->siguiente;
+	while (temp->siguiente != NULO){
+		temp = temp->siguiente;
+		prev = prev->siguiente;
+	}
+	prev->siguiente = NULO;
+	delete temp;
+	this->final = prev;
+}
+void Lista::removerInicio(){
+	Elemento* temp = this->inicial;
+	this->inicial = this->inicial->siguiente;
+	delete temp;
+}
+
 ostream & operator<<(ostream & out, Lista & l) {
 	l.imprimir(out);
 
@@ -36,10 +81,19 @@ ostream & operator<<(ostream & out, Lista & l) {
 
 void Lista::imprimir(ostream& out){
 	Elemento* actual = this->inicial;
-	do{
+	while (actual != NULO){
 		out << *actual<<" ";
 		actual = actual->siguiente;
-	}while (actual->siguiente != NULO);
+	};
+}
+void Lista::remover(int posicion){
+	Elemento* actual = this->inicial;
+	while (--posicion != 0){
+		actual = actual->siguiente;
+	}
+	Elemento* borrar = actual->siguiente;
+	actual->siguiente = actual->siguiente->siguiente;
+	delete borrar;
 }
 
 Lista::~Lista()
